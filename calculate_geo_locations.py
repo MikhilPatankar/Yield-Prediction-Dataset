@@ -8,6 +8,8 @@ import time
 import warnings
 import csv # Use the csv module for efficient appending
 from datetime import datetime
+import numpy as np # For NaN
+from shapely.geometry import mapping 
 
 # Ignore warnings
 warnings.filterwarnings('ignore', module='ee')
