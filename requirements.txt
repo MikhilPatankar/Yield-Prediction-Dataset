@@ -1,0 +1,3 @@
+earthengine-api # Google Earth Engine Python client
+pandas          # Data manipulation and analysis (CSVs)
+geopandas       # Handling geospatial data (GeoJSON, geometries)
