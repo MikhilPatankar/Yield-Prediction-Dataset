@@ -322,6 +322,7 @@ for index, row in unique_combinations.iterrows():
                 mean_elev = calculate_mean_elevation(aoi_ee, district_key) # Static, uses cache
                 mean_precip_s = calculate_mean_precipitation_season(aoi_ee, start_date, end_date)
                 mean_solar_s = calculate_mean_solar_radiation_season(aoi_ee, start_date, end_date)
+                print(f"LST: {mean_lst_s} | ELEV: {mean_elev} | PRECIPITATE: {mean_precip_s} | SOLAR: {mean_solar_s}")
             except Exception as gee_calc_e:
                  print(f"--> Unexpected Error during GEE calcs for {district_key} ({year}/{season}): {gee_calc_e}")
                  mean_elev = elevation_cache.get(district_key, None) # Attempt to get cached elevation
